@@ -1,0 +1,3 @@
+CREATE TABLE `codebase`.`user` ( `id` INT NOT NULL AUTO_INCREMENT, `username` VARCHAR(64) NOT NULL , `password` VARCHAR(64) NOT NULL COMMENT '采用md5', PRIMARY KEY (`id`) ) char set  = utf8 ,  ENGINE = InnoDB;
+CREATE TABLE `codebase`.`code` ( `id` INT NOT NULL , `code_content` TEXT NOT NULL , `title` VARCHAR(200) NOT NULL , `author` VARCHAR(64) NOT NULL , `tag` VARCHAR(64) NOT NULL , `time` INT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB,char set = utf8;
+CREATE TABLE `codebase`.`relations` ( `id` INT NOT NULL , `item_id` INT NOT NULL , `menu_id` INT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;

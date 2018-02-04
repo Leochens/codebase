@@ -1,0 +1,53 @@
+{foreach $item_list as $item}
+
+<div class="container col-lg-8 col-lg-offset-2">
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <span class="h4">{$item.title}</span >&nbsp;&nbsp;&nbsp;
+        <span> <small class="badge">{$item.tag}</small><i class="icon-tag"></i></span>
+    </div>
+    <div class="panel-body">
+        <div class="container-fluid col-lg-12">
+            <pre><code>
+           {$item.code_content}
+            </code></pre>
+        </div> 
+        </div>
+        <div class="container-fluid "> 
+        <a href="{$router_code_codeInsertUpdate}{$item.id}" class="btn btn-primary">编辑</a>
+        <a href="{$router_code_codeDelete}{$item.id}" class="btn btn-danger">删除</a>
+
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+{foreachelse}
+<div class="container col-lg-8 col-lg-offset-2">
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <span class="h4">暂时没有代码哦</span >&nbsp;&nbsp;&nbsp;
+        <span> <small class="badge">NoTag</small> <i class="icon-tag"></i></span>
+    </div>
+    <div class="panel-body">
+        <div class="container-fluid col-lg-12">
+            <pre><code>
+           哇~什么都没有..
+            </code></pre>
+        </div>
+        </div>
+        <div class="container-fluid "> 
+        <a href="#" class="btn btn-primary">编辑</a>
+        <a href="#" class="btn btn-danger">删除</a>
+   
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+{/foreach}
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$TITLE}</title>
+    {include file='tpl/head_srcs.html'}
+</head>
+<body>
+
+{include file='tpl/nav.html'}
+{include file={'tpl/'|cat:$what}}
+{include file='tpl/footer.html'}
+
+
+
+{include file='tpl/js_srcs.html'}
+<!--激活代码高亮-->
+<script>hljs.initHighlightingOnLoad();</script> 
+</body>
+</html>
