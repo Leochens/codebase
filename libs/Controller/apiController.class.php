@@ -23,7 +23,7 @@ class apiController extends CONTROLLER
     public function index()
     { 
         
-        return json_encode($this->res);
+        echo json_encode($this->res);
     }
 
 
