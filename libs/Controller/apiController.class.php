@@ -19,11 +19,12 @@ class apiController extends CONTROLLER
     [ 'id'=> 18, 'title'=> 'Dr IQ' ,'content'=>"this is a sentence"],
     [ 'id'=> 19, 'title'=> 'Magma' ,'content'=>"this is a sentence"],
     [ 'id'=> 20, 'title'=> 'Tornado','content'=>"this is a sentence"],)
-);
+        );
     public function index()
     { 
         
         echo json_encode($this->res);
+        return json_encode($this->res);
     }
 
 
