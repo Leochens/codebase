@@ -1,13 +1,13 @@
 {foreach $item_list as $item}
 
-<div class="container col-lg-8 col-lg-offset-2">
+<div class="container col-lg-8 col-lg-offset-2 col-sm-12 ">
 <div class="panel panel-info">
     <div class="panel-heading">
         <span class="h4">{$item.title}</span >&nbsp;&nbsp;&nbsp;
         <span> <small class="badge">{$item.tag}</small><i class="icon-tag"></i></span>
     </div>
     <div class="panel-body">
-        <div class="container-fluid col-lg-12">
+        <div class="container-fluid col-lg-12 col-sm-12">
             <pre><code>
            {$item.code_content}
             </code></pre>
@@ -25,14 +25,14 @@
 </div>
 
 {foreachelse}
-<div class="container col-lg-8 col-lg-offset-2">
+<div class="container col-lg-8 col-lg-offset-2 col-sm-12">
 <div class="panel panel-info">
     <div class="panel-heading">
         <span class="h4">暂时没有代码哦</span >&nbsp;&nbsp;&nbsp;
         <span> <small class="badge">NoTag</small> <i class="icon-tag"></i></span>
     </div>
     <div class="panel-body">
-        <div class="container-fluid col-lg-12">
+        <div class="container-fluid col-lg-12 col-sm-12">
             <pre><code>
            哇~什么都没有..
             </code></pre>

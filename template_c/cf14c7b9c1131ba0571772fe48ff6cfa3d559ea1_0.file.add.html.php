@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-02-04 20:55:31
+/* Smarty version 3.1.30, created on 2018-02-04 21:29:20
   from "C:\Users\11834\Desktop\study\codebase\tpl\add.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a7702c35c2c55_91347953',
+  'unifunc' => 'content_5a770ab07e8060_96239493',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cf14c7b9c1131ba0571772fe48ff6cfa3d559ea1' => 
     array (
       0 => 'C:\\Users\\11834\\Desktop\\study\\codebase\\tpl\\add.html',
-      1 => 1517748928,
+      1 => 1517750958,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a7702c35c2c55_91347953 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a770ab07e8060_96239493 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
-<div class="container-fluid col-lg-8 col-lg-offset-2">
+<div class="container-fluid col-lg-8 col-lg-offset-2 col-sm-12">
     <form action="<?php echo $_smarty_tpl->tpl_vars['router_code_codeInsertUpdate']->value;?>
 " class="form-group " method="POST" role="form">
         <legend>新增代码</legend>
-        <div class="form-inline   ">
+        <div class="form-inline col-sm-12  ">
             <div class=" form-group">
                 <label for="">标题</label>
                 <input type="text" name="title" class="form-control "  value="<?php echo (($tmp = @$_smarty_tpl->tpl_vars['data']->value['title'])===null||$tmp==='' ? '' : $tmp);?>
@@ -56,7 +56,8 @@ function content_5a7702c35c2c55_91347953 (Smarty_Internal_Template $_smarty_tpl)
         <input type="submit" class="btn btn-primary" value="存入" ></input>
         <input type="hidden" name="id" value="<?php echo (($tmp = @$_smarty_tpl->tpl_vars['data']->value['id'])===null||$tmp==='' ? '' : $tmp);?>
 ">
-        <a type="button" class="btn btn-info">仓库</a>
+        <a type="button" href="<?php echo $_smarty_tpl->tpl_vars['router_code_codeShow']->value;?>
+" class="btn btn-info">仓库</a>
     </form>
 </div><?php }
 }
