@@ -9,7 +9,7 @@ class apiController extends CONTROLLER
 
     public $res = array(
     'D'=>array(
-    [ 'id'=> 11, 'title'=> 'Mr. Nice','content'=>"this is a sentence" ],
+    [ 'id'=> 11, 'title'=> 'Mr. Nice1234','content'=>"this is a sentence" ],
     [ 'id'=> 12, 'title'=> 'Narco','content'=>"this is a sentence" ],
     [ 'id'=> 13, 'title'=> 'Bombasto' ,'content'=>"this is a sentence"],
     [ 'id'=> 14, 'title'=> 'Celeritas' ,'content'=>"this is a sentence"],
